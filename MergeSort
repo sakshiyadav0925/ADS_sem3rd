@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std ;
+
+void Merge(int A[],int l ,int r,int mid)
+{
+  int n= mid-l+1;
+  int m=r-mid;
+    l[n]=r[m] ;
+  for(int i=0;i<n;i++)
+{
+    l[i]=A[l+i];
+
+}
+for(int j=0;j<m;j++)
+{
+    r[j]=A[mid+j+1] ;
+
+}
+ i=0;j=0,r=l ;
+ while(i<n&&j<m)
+ {
+    if(l[i]<r[j]) 
+    {
+        A[r]=l[i] ;
+        i++ ;
+        k++ ;
+    }
+    else {
+        A[r]=r[j] ;
+        j++;
+        k++;
+    }
+ }
+
+
+ int main() 
+ {
+
+ }
